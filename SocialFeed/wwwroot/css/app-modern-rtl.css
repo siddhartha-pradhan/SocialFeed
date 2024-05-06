@@ -8183,11 +8183,11 @@ textarea.form-control-lg {
 }
 
 .float-start {
-  float: right !important;
+  float: left !important;
 }
 
 .float-end {
-  float: left !important;
+  float: right !important;
 }
 
 .float-none {
