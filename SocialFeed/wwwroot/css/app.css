@@ -101,3 +101,8 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+.authentication-bg .account-pages{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
