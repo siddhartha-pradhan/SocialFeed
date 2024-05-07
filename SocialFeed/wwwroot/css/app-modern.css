@@ -15363,12 +15363,14 @@ html[data-bs-theme=dark] #light-dark-mode .ri-moon-line::before {
   }
 }
 .page-title-box .page-title {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0;
-  line-height: 75px;
+  line-height: 1.2;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-bottom: 32px;
+  margin-top: 24px;
 }
 .page-title-box .page-title-right {
   float: right;

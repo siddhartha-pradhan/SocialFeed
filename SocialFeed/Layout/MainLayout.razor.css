@@ -80,13 +80,14 @@ main {
   }
 }
 
-.header-about a {
+.top-row a {
   color: #6c757d;
   font-weight: 500;
   font-size: 16px;
   margin-right: 16px;
+  margin-left: 0;
 }
-.user-info p{
-    font-size: 16px;
-    font-weight: 500;
+.user-info p {
+  font-size: 16px;
+  font-weight: 500;
 }
