@@ -1,7 +1,143 @@
-.card-images {
-  row-gap: 24px;
+.nav-tabs.nav-bordered li a {
+  border: solid transparent;
+  border-width: 4px 2px 2px;
+  padding: 0.625rem 1.25rem;
 }
-.card:nth-child(3) img {
-  aspect-ratio: 2/1;
+.nav-tabs.nav-bordered li a.active {
+  color: #526ed3;
+  background-color: #fff;
+  border-color: #526ed3 #dee2e6 #fff;
+  border-top-width: 4px;
+}
+.full__container {
+  columns: 2;
+  column-gap: 20px;
+}
+.full__container .post {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 0 20px;
+  break-inside: avoid;
+}
+.full__container .post .post__image img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full__container .post .post__image .social__media_icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  z-index: 3;
+}
+.full__container .post .post__image .social__media_icon i {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.full__container .post .post__content {
+  padding: 15px;
+}
+.full__container .post .post__content .top__section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.2rem 0 1.4rem;
+}
+.full__container .post .post__content .top__section .profile__img {
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  position: relative;
+  border: 1px solid #3498db;
+}
+.full__container .post .post__content .top__section .profile__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.full__container .post .post__content .top__section h3,
+.full__container .post .post__content .top__section span {
+  margin: 0 0 0 0.5rem;
+}
+.full__container .post .post__content .top__section h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0 0.5rem;
+  color: #353535;
+}
+.full__container .post .post__content .top__section span {
+  color: rgba(53, 53, 53, 0.7);
+  font-size: 0.9rem;
+}
+.full__container .post .post__content .bottom__section article {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.9);
+}
+.full__container .post .post__content .bottom__section article .hashtag {
+  color: #00bcd4;
+  font-weight: 500;
+}
+.full__container .post .post__content .bottom__section .hashtags {
+  list-style: none;
+  margin: 0.8rem 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.full__container .post .post__content .bottom__section .hashtags li {
+  font-size: 0.8rem;
+  margin: 0 0.2rem;
+  color: #00bcd4;
+  font-weight: 700;
+}
+.full__container .post .post__content .bottom__section .date {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8rem;
+  padding: 0.2rem 0 0.7rem;
+}
+.full__container .post .post__content .bottom__section .actions {
+  display: flex;
+}
+.full__container .post .post__content .bottom__section .actions .action {
+  display: flex;
+  align-items: center;
+  margin: 0 0.7rem 0 0;
+}
+.full__container .post .post__content .bottom__section .actions .action i {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.8rem;
+}
+.full__container .post .post__content .bottom__section .actions .action span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8rem;
+  margin: 0 0 0 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .full__container {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .full__container {
+    columns: 1;
+  }
 }
