@@ -17,6 +17,12 @@
   font-weight: 500;
   padding-inline: 16px;
 }
+@media all and (max-width: 1400px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    padding-inline: 12px;
+  }
+}
 .navbar-nav .nav-link[aria-current="page"] {
   color: #fff;
   background-color: #029b3c;

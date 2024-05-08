@@ -1,3 +1,10 @@
+.list-group a{
+  font-weight: 500;
+  font-size: 16px;
+}
+.list-group a.text-primary{
+  color: #029b3c !important;
+}
 .nav-tabs.nav-bordered li a {
   border: solid transparent;
   border-width: 4px 2px 2px;
