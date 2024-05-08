@@ -30,7 +30,7 @@
     <div class="col-xxl-9 col-lg-12 order-lg-2 order-xxl-1">
         <!-- new post -->
         <div class="card">
-            <div class="card-body p-0">
+            <div class="card-body p-2">
                 <ul class="nav nav-tabs nav-bordered" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a href="#newpost" data-bs-toggle="tab" aria-expanded="false" class="nav-link active px-3 py-2"
@@ -60,7 +60,7 @@
                         <form action="#" class="comment-area-box">
                             <textarea rows="4" class="form-control border-0 resize-none"
                                 placeholder="Write something...."></textarea>
-                            <div class="p-2 d-flex justify-content-between align-items-center">
+                            <div class="p-0 pt-2 d-flex justify-content-between align-items-center">
                                 <div>
                                     <a href="#" class="btn btn-sm px-2 font-16 btn-light"><i
                                             class="uil uil-scenery"></i></a>
@@ -81,8 +81,8 @@
         
         <div class="card">
             <div class="card-body pb-1">
-                <div class="full__container">
-                    <div class="post">
+                <div class="card-content">
+                    <div class="post no-image">
                         <div class="post__content">
                             <div class="top__section justify-content-between">
                                 <div class="d-flex align-items-center">
@@ -90,10 +90,12 @@
                                         <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
                                             class="img-fluid" />
                                     </div>
-                                    <div class="profile__title">
-                                        <h3>John Doe</h3>
-                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
-                                    </div>
+                                        <div class="profile__title">
+                                    <h3>John Doe</h3>
+                                    <span class="date text-muted">May 1 at 10:00 AM</span>
+                                    <span><i class="mdi mdi-music-note-whole"></i></span>
+                                    <span class="location text-muted my-0">Washinhton</span>
+                                </div>
                                 </div>
                                 <div class="dropdown float-end text-muted">
                                     <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
@@ -126,7 +128,7 @@
                                     <li>#branding</li>
                                     <li>#conference</li>
                                 </ul>
-                                <div class="date">10:00 AM, 12-02-2019</div>
+                               
                                 <div class="mt-1 mb-1">
                                     <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
                                         <i class="mdi mdi-arrow-up-bold text-muted"></i>
@@ -205,9 +207,11 @@
                                             class="img-fluid" />
                                     </div>
                                     <div class="profile__title">
-                                        <h3>John Doe</h3>
-                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
-                                    </div>
+                                    <h3>John Doe</h3>
+                                    <span class="date text-muted">40m ago</span>
+                                    <span><i class="mdi mdi-music-note-whole"></i></span>
+                                    <span class="location text-muted my-0">Washinhton</span>
+                                </div>
                                 </div>
                                 <div class="dropdown float-end text-muted">
                                     <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
@@ -232,7 +236,7 @@
                                     <li>#Fashion</li>
                                     <li>#Women</li>
                                 </ul>
-                                <div class="date">10:00 AM, 12-02-2019</div>
+                                
                                 <div class="mt-1 mb-1">
                                     <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
                                         <i class="mdi mdi-arrow-up-bold text-muted"></i>
@@ -250,32 +254,10 @@
                         </div>
                     </div>
                     <div class="post">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
-                                </li>
-                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                <div class="post__image carousel-item active">
-                                    <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
-                                    <div class="social__media_icon">
-                                        <i class="fab fa-instagram"> </i>
-                                    </div>
-                                </div>
-                                <div class="post__image carousel-item">
-                                    <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
-                                    <div class="social__media_icon">
-                                        <i class="fab fa-instagram"> </i>
-                                    </div>
-                                </div>
-                                <div class="post__image carousel-item">
-                                    <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
-                                    <div class="social__media_icon">
-                                        <i class="fab fa-instagram"> </i>
-                                    </div>
-                                </div>
+                        <div class="post__image">
+                            <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
+                            <div class="social__media_icon">
+                                <i class="fab fa-instagram"> </i>
                             </div>
                         </div>
                         <div class="post__content">
@@ -286,9 +268,11 @@
                                             class="img-fluid" />
                                     </div>
                                     <div class="profile__title">
-                                        <h3>John Doe</h3>
-                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
-                                    </div>
+                                    <h3>John Doe</h3>
+                                    <span class="date text-muted">about an hour ago</span>
+                                    <span><i class="mdi mdi-music-note-whole"></i></span>
+                                    <span class="location text-muted my-0">Washinhton</span>
+                                </div>
                                 </div>
                                 <div class="dropdown float-end text-muted">
                                     <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
@@ -312,7 +296,7 @@
                                     <li>#atarius</li>
                                     <li>#atariusconcept</li>
                                 </ul>
-                                <div class="date">10:00 AM, 12-02-2019</div>
+                                
                                 <div class="mt-1 mb-1">
                                     <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
                                         <i class="mdi mdi-arrow-up-bold text-muted"></i>
@@ -344,9 +328,11 @@
                                             class="img-fluid" />
                                     </div>
                                     <div class="profile__title">
-                                        <h3>John Doe</h3>
-                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
-                                    </div>
+                                    <h3>John Doe</h3>
+                                    <span class="date text-muted">1mo ago</span>
+                                    <span><i class="mdi mdi-music-note-whole"></i></span>
+                                    <span class="location text-muted my-0">Washinhton</span>
+                                </div>
                                 </div>
                                 <div class="dropdown float-end text-muted">
                                     <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
@@ -372,7 +358,7 @@
                                     <li>#casual</li>
                                     <li>#mensweardaily</li>
                                 </ul>
-                                <div class="date">10:00 AM, 12-02-2019</div>
+                                
                                 <div class="mt-1 mb-1">
                                     <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
                                         <i class="mdi mdi-arrow-up-bold text-muted"></i>

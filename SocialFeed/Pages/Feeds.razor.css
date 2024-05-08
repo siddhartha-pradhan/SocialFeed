@@ -1,26 +1,24 @@
-.list-group a{
+.list-group a {
   font-weight: 500;
   font-size: 16px;
 }
-.list-group a.text-primary{
+.list-group a.text-primary {
   color: #029b3c !important;
 }
 .nav-tabs.nav-bordered li a {
-  border: solid transparent;
-  border-width: 4px 2px 2px;
+  border: 2px solid transparent;
   padding: 0.625rem 1.25rem;
 }
 .nav-tabs.nav-bordered li a.active {
   color: #526ed3;
   background-color: #fff;
-  border-color: #526ed3 #dee2e6 #fff;
-  border-top-width: 4px;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
-.full__container {
+.card-content {
   columns: 2;
   column-gap: 20px;
 }
-.full__container .post {
+.card-content .post {
   width: 100%;
   display: block;
   overflow: hidden;
@@ -30,13 +28,13 @@
   margin: 0 0 20px;
   break-inside: avoid;
 }
-.full__container .post .post__image img {
+.card-content .post .post__image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-.full__container .post .post__image .social__media_icon {
+.card-content .post .post__image .social__media_icon {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -46,101 +44,85 @@
   overflow: hidden;
   z-index: 3;
 }
-.full__container .post .post__image .social__media_icon i {
+.card-content .post .post__image .social__media_icon i {
   color: #fff;
   font-size: 1.1rem;
 }
-.full__container .post .post__content {
+.card-content .post .post__content {
   padding: 15px;
 }
-.full__container .post .post__content .top__section {
+.card-content .post .post__content .top__section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 0px 0 1.4rem;
-  /* margin: -40px 0 1.4rem; */
+  margin: -40px 0 1.4rem;
 }
-.full__container .post .post__content .top__section .profile__img {
+.card-content .post.no-image .post__content .top__section {
+  margin: 0px 0 1.4rem;
+}
+.card-content .post .post__content .top__section .profile__img {
   width: 80px;
   height: 80px;
   border-radius: 8px;
   border: 4px solid #fff;
 }
-.full__container .post .post__content .top__section .profile__img img {
+.card-content .post .post__content .top__section .profile__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
 }
-.full__container .post .post__content .top__section .profile__title {
+.card-content .post .post__content .top__section .profile__title {
   margin-top: 20px;
   margin-left: 0.5rem;
 }
-.full__container .post .post__content .top__section h3 {
+.card-content .post .post__content .top__section h3 {
   margin: 0;
   color: #353535;
 }
-.full__container .post .post__content .top__section span.location {
+.card-content .post .post__content .top__section span.location {
   color: rgba(53, 53, 53, 0.7);
   font-size: 0.9rem;
   margin-top: 2px;
   font-weight: 500;
 }
-.full__container .post .post__content .bottom__section article {
+.card-content .post .post__content .bottom__section article {
   text-transform: capitalize;
   font-size: 0.8rem;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.9);
 }
-.full__container .post .post__content .bottom__section article .hashtag {
+.card-content .post .post__content .bottom__section article .hashtag {
   color: #00bcd4;
   font-weight: 500;
 }
-.full__container .post .post__content .bottom__section .hashtags {
+.card-content .post .post__content .bottom__section .hashtags {
   list-style: none;
   margin: 0.8rem 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
-.full__container .post .post__content .bottom__section .hashtags li {
+.card-content .post .post__content .bottom__section .hashtags li {
   font-size: 0.8rem;
   margin: 0 0.2rem;
   color: #00bcd4;
   font-weight: 700;
 }
-.full__container .post .post__content .bottom__section .date {
+.card-content .post .post__content .bottom__section .date {
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.8rem;
   padding: 0.2rem 0 0.7rem;
 }
-.full__container .post .post__content .bottom__section .actions {
-  display: flex;
-}
-.full__container .post .post__content .bottom__section .actions .action {
-  display: flex;
-  align-items: center;
-  margin: 0 0.7rem 0 0;
-}
-.full__container .post .post__content .bottom__section .actions .action i {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 0.8rem;
-}
-.full__container .post .post__content .bottom__section .actions .action span {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 0.8rem;
-  margin: 0 0 0 0.3rem;
-}
-
 @media screen and (max-width: 768px) {
-  .full__container {
+  .card-content {
     columns: 2;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .full__container {
+  .card-content {
     columns: 1;
   }
 }

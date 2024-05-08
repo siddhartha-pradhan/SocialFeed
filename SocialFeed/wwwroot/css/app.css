@@ -139,6 +139,7 @@ code {
   width: 100%;
   border: 1px solid #b9c8d6;
   border-radius: 8px;
+  background: #fff;
 }
 .custom-form .form-floating:nth-child(2) {
   margin-bottom: 18px;
