@@ -7,8 +7,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="d-flex align-self-start">
-                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                        class="mx-2 rounded" />
+                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48" class="img-fluid" />
                     <div class="w-100 overflow-hidden">
                         <h5 class="mt-1 mb-0">ABC</h5>
                         <p class="mb-1 mt-1 text-muted">Admin</p>
@@ -34,8 +33,8 @@
             <div class="card-body p-0">
                 <ul class="nav nav-tabs nav-bordered" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a href="#newpost" data-bs-toggle="tab" aria-expanded="false"
-                            class="nav-link active px-3 py-2" aria-selected="true" role="tab">
+                        <a href="#newpost" data-bs-toggle="tab" aria-expanded="false" class="nav-link active px-3 py-2"
+                            aria-selected="true" role="tab">
                             <i class="mdi mdi-pencil-box-multiple font-18 d-md-none d-block"></i>
                             <span class="d-none d-md-block">Create Post</span>
                         </a>
@@ -76,40 +75,47 @@
                             </div>
                         </form>
                     </div>
-                    <!-- end preview-->
                 </div>
-                <!-- end tab-content-->
             </div>
         </div>
-        <!-- end new post -->
-
-        <!-- start news feeds -->
+        
         <div class="card">
             <div class="card-body pb-1">
                 <div class="full__container">
                     <div class="post">
-                        <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
-                            <div class="social__media_icon">
-                                <i class="fab fa-facebook-f"> </i>
-                            </div>
-                        </div>
                         <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
+                            <div class="top__section justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="profile__img">
+                                        <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
+                                            class="img-fluid" />
+                                    </div>
+                                    <div class="profile__title">
+                                        <h3>John Doe</h3>
+                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
+                                    </div>
                                 </div>
-                                <div class="profile__title">
-                                    <h3>John Doe</h3>
+                                <div class="dropdown float-end text-muted">
+                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="mdi mdi-dots-horizontal"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" style="">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Edit</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Delete</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bottom__section">
                                 <article>
-                                    we had such a great time with our volunteers at last
-                                    year's OnBrand Event!
-                                    <span class="hashtag">#OnBrand 👏👏👏 </span>
+                                    <div class="font-16 text-center text-dark my-3">
+                                        <i class="mdi mdi-format-quote-open font-20"></i> Leave one wolf alive and the
+                                        sheep are never safe. When people ask you
+                                        what happened here, tell them the North remembers. Tell them winter came for
+                                        House Frey.
+                                    </div>
                                 </article>
                                 <ul class="hashtags">
                                     <li>#OnBrand</li>
@@ -120,37 +126,100 @@
                                     <li>#branding</li>
                                     <li>#conference</li>
                                 </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>20</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>28</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>13</span>
-                                    </div>
+                                <div class="date">10:00 AM, 12-02-2019</div>
+                                <div class="mt-1 mb-1">
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
+                                        <i class="mdi mdi-arrow-up-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-up-bold-outline text-muted"></i>
+                                        1.2k Likes
+                                        <i class="mdi mdi-arrow-down-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-down-bold-outline text-muted"></i>
+                                    </a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-comments-alt"></i> 148 Comments</a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-share-alt"></i> Share</a>
                                 </div>
+                            </div>
+                            <hr class="m-0">
+                            <div class="mt-3">
+                                <div class="d-flex">
+                                    <img class="me-2 rounded" src="images/users/avatar-9.jpg"
+                                        alt="Generic placeholder image" height="32">
+                                    <div>
+                                        <h5 class="m-0">Sansa Stark </h5>
+                                        <p class="text-muted mb-0"><small>2 mins ago</small></p>
+
+                                        <p class="my-1">This is awesome! Proud of sis :) Waiting for you to
+                                            come back to winterfall</p>
+
+                                        <div>
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted p-0">
+                                                <i class="uil uil-heart me-1"></i> Like
+                                            </a>
+                                            <a href="javascript: void(0);"
+                                                class="btn btn-sm btn-link text-muted p-0 ps-2">
+                                                <i class="uil uil-comments-alt me-1"></i> Reply
+                                            </a>
+                                        </div>
+
+                                        <div class="d-flex mt-3">
+                                            <img class="me-2 rounded" src="images/users/avatar-8.jpg"
+                                                alt="Generic placeholder image" height="32">
+                                            <div>
+                                                <h5 class="m-0">Cersei Lannister </h5>
+                                                <p class="text-muted mb-0"><small>1 min ago</small></p>
+
+                                                <p class="my-1">I swear! She won't be able to reach to winterfall</p>
+                                            </div>
+                                        </div> <!-- end d-flex-->
+                                    </div> <!-- end div -->
+                                </div> <!-- end d-flex-->
+
+                                <hr>
+
+                                <div class="d-flex mb-2">
+                                    <img src="images/users/avatar-1.jpg" height="32"
+                                        class="align-self-start rounded me-2" alt="Arya Stark">
+                                    <div class="w-100">
+                                        <input type="text" class="form-control border-0 form-control-sm"
+                                            placeholder="Write a comment">
+                                    </div> <!-- end w-100 -->
+                                </div> <!-- end d-flex -->
+
                             </div>
                         </div>
                     </div>
                     <div class="post">
                         <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
+                            <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
                             <div class="social__media_icon">
                                 <i class="fab fa-twitter"> </i>
                             </div>
                         </div>
                         <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
+                            <div class="top__section justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="profile__img">
+                                        <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
+                                            class="img-fluid" />
+                                    </div>
+                                    <div class="profile__title">
+                                        <h3>John Doe</h3>
+                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
+                                    </div>
                                 </div>
-                                <div class="profile__title">
-                                    <h3>Sarah Janes</h3>
+                                <div class="dropdown float-end text-muted">
+                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="mdi mdi-dots-horizontal"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" style="">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Edit</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Delete</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bottom__section">
@@ -163,37 +232,75 @@
                                     <li>#Fashion</li>
                                     <li>#Women</li>
                                 </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>12</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>20</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>10</span>
-                                    </div>
+                                <div class="date">10:00 AM, 12-02-2019</div>
+                                <div class="mt-1 mb-1">
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
+                                        <i class="mdi mdi-arrow-up-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-up-bold-outline text-muted"></i>
+                                        1.2k Likes
+                                        <i class="mdi mdi-arrow-down-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-down-bold-outline text-muted"></i>
+                                    </a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-comments-alt"></i> 148 Comments</a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-share-alt"></i> Share</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="post">
-                        <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
-                            <div class="social__media_icon">
-                                <i class="fab fa-instagram"> </i>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
+                                </li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="post__image carousel-item active">
+                                    <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
+                                    <div class="social__media_icon">
+                                        <i class="fab fa-instagram"> </i>
+                                    </div>
+                                </div>
+                                <div class="post__image carousel-item">
+                                    <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
+                                    <div class="social__media_icon">
+                                        <i class="fab fa-instagram"> </i>
+                                    </div>
+                                </div>
+                                <div class="post__image carousel-item">
+                                    <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
+                                    <div class="social__media_icon">
+                                        <i class="fab fa-instagram"> </i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
+                            <div class="top__section justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="profile__img">
+                                        <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
+                                            class="img-fluid" />
+                                    </div>
+                                    <div class="profile__title">
+                                        <h3>John Doe</h3>
+                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
+                                    </div>
                                 </div>
-                                <div class="profile__title">
-                                    <h3>Smith Doe</h3>
+                                <div class="dropdown float-end text-muted">
+                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="mdi mdi-dots-horizontal"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" style="">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Edit</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Delete</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bottom__section">
@@ -205,37 +312,53 @@
                                     <li>#atarius</li>
                                     <li>#atariusconcept</li>
                                 </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>25</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>30</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>10</span>
-                                    </div>
+                                <div class="date">10:00 AM, 12-02-2019</div>
+                                <div class="mt-1 mb-1">
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
+                                        <i class="mdi mdi-arrow-up-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-up-bold-outline text-muted"></i>
+                                        1.2k Likes
+                                        <i class="mdi mdi-arrow-down-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-down-bold-outline text-muted"></i>
+                                    </a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-comments-alt"></i> 148 Comments</a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-share-alt"></i> Share</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="post">
                         <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
+                            <img src="images/small/small-2.jpg" alt="post-img" class="img-fluid">
                             <div class="social__media_icon">
                                 <i class="fab fa-facebook-f"> </i>
                             </div>
                         </div>
                         <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
+                            <div class="top__section justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="profile__img">
+                                        <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
+                                            class="img-fluid" />
+                                    </div>
+                                    <div class="profile__title">
+                                        <h3>John Doe</h3>
+                                        <span class="location text-muted mb-0 mt-1">Washinhton</span>
+                                    </div>
                                 </div>
-                                <div class="profile__title">
-                                    <h3>Brian</h3>
+                                <div class="dropdown float-end text-muted">
+                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="mdi mdi-dots-horizontal"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" style="">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Edit</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Delete</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bottom__section">
@@ -249,197 +372,19 @@
                                     <li>#casual</li>
                                     <li>#mensweardaily</li>
                                 </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>20</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>20</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>10</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
-                            <div class="social__media_icon">
-                                <i class="fab fa-twitter"> </i>
-                            </div>
-                        </div>
-                        <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
-                                </div>
-                                <div class="profile__title">
-                                    <h3>Anya</h3>
-                                </div>
-                            </div>
-                            <div class="bottom__section">
-                                <article>
-                                    Pick your favourite Follow
-                                    <span class="hashtag">#ladyonlys</span>
-                                </article>
-                                <ul class="hashtags">
-                                    <li>#womensfashion</li>
-                                    <li>#womenfashion</li>
-                                    <li>#girlstylelook</li>
-                                    <li>#womenfashions</li>
-                                    <li>#womenswear</li>
-                                    <li>#ladyfashion</li>
-                                </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>20</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>20</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>10 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
-                            <div class="social__media_icon">
-                                <i class="fab fa-instagram"> </i>
-                            </div>
-                        </div>
-                        <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
-                                </div>
-                                <div class="profile__title">
-                                    <h3>Brick Ollen</h3>
-                                </div>
-                            </div>
-                            <div class="bottom__section">
-                                <article>
-                                    Coming out with something special this week! ⛱️
-                                </article>
-                                <ul class="hashtags">
-                                    <li>#lifestyleblog</li>
-                                    <li>#vlog</li>
-                                    <li>#contentcreators</li>
-                                    <li>#wanderlust</li>
-                                </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>20</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>20</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>10 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
-                            <div class="social__media_icon">
-                                <i class="fab fa-instagram"> </i>
-                            </div>
-                        </div>
-                        <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
-                                </div>
-                                <div class="profile__title">
-                                    <h3>Emma Watson</h3>
-                                </div>
-                            </div>
-                            <div class="bottom__section">
-                                <article></article>
-                                <ul class="hashtags">
-                                    <li>#leaveonlyleaves</li>
-                                    <li>#leaves</li>
-                                    <li>#artistry_lords</li>
-                                    <li>#tv_depthoffield</li>
-                                    <li>#mode_emotive</li>
-                                    <span>🥰 </span>
-                                </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>20</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>20</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>10 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <div class="post__image">
-                            <img src="images/small/small-2.jpg" alt="post-img"
-                                class="img-fluid">
-                            <div class="social__media_icon">
-                                <i class="fab fa-facebook-f"> </i>
-                            </div>
-                        </div>
-                        <div class="post__content">
-                            <div class="top__section">
-                                <div class="profile__img">
-                                    <img src="images/users/avatar-3.jpg" alt="User Photo" width="48" height="48"
-                                        class="mx-2 rounded" />
-                                </div>
-                                <div class="profile__title">
-                                    <h3>George</h3>
-                                </div>
-                            </div>
-                            <div class="bottom__section">
-                                <article>
-                                    There’s something magical and mesmerizing about the
-                                    ocean... do you feel that too?! 🌊
-                                </article>
-                                <ul class="hashtags">
-                                    <li>#ocean</li>
-                                    <li>#oceanview</li>
-                                    <li>#sea</li>
-                                    <li>#seaside</li>
-                                    <li>#beachday</li>
-                                    <li>#beachlife</li>
-                                    <li>#beach</li>
-                                    <li>#travel</li>
-                                </ul>
-                                <div class="date">10:00 AM 12-02-2019</div>
-                                <div class="actions">
-                                    <div class="action like">
-                                        <i class="fas fa-heart"> </i><span>20</span>
-                                    </div>
-                                    <div class="action share">
-                                        <i class="fas fa-share-alt"></i><span>20</span>
-                                    </div>
-                                    <div class="action comment">
-                                        <i class="far fa-comment-alt"></i><span>10 </span>
-                                    </div>
+                                <div class="date">10:00 AM, 12-02-2019</div>
+                                <div class="mt-1 mb-1">
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted ps-0">
+                                        <i class="mdi mdi-arrow-up-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-up-bold-outline text-muted"></i>
+                                        1.2k Likes
+                                        <i class="mdi mdi-arrow-down-bold text-muted"></i>
+                                        <i class="mdi mdi-arrow-down-bold-outline text-muted"></i>
+                                    </a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-comments-alt"></i> 148 Comments</a>
+                                    <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i
+                                            class="uil uil-share-alt"></i> Share</a>
                                 </div>
                             </div>
                         </div>
