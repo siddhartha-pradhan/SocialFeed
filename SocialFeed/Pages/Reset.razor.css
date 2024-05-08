@@ -1,6 +1,6 @@
-article.content {
-  padding: 0;
+.auth-fluid-right img {
+  object-fit: cover;
 }
-.authentication-bg {
-  height: 100vh;
+.auth-fluid-form-box {
+  max-width: 700px;
 }
