@@ -3,14 +3,13 @@
   font-size: 16px;
 }
 .list-group a.text-primary {
-  color: #029b3c !important;
+  color: #eb7924 !important;
 }
 .nav-tabs.nav-bordered li a {
   border: 2px solid transparent;
   padding: 0.625rem 1.25rem;
 }
 .nav-tabs.nav-bordered li a.active {
-  color: #526ed3;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -107,7 +106,7 @@
 .card-content .post .post__content .bottom__section .hashtags li {
   font-size: 0.8rem;
   margin: 0 0.2rem;
-  color: #00bcd4;
+  color: #ffb27d;
   font-weight: 700;
 }
 .card-content .post .post__content .bottom__section .date {

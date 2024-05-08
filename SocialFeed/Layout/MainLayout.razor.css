@@ -9,7 +9,7 @@
   font-size: clamp(42px, calc(2.625rem + ((1vw - 7.68px) * -1.3889)), 26px);
   min-height: 0vw;
   font-weight: 700;
-  color: #029b3c;
+  color: #eb7924;
 }
 .navbar-nav .nav-link {
   color: var(--text-muted);
@@ -25,6 +25,6 @@
 }
 .navbar-nav .nav-link[aria-current="page"] {
   color: #fff;
-  background-color: #029b3c;
+  background-color: #eb7924;
   border-radius: 8px;
 }

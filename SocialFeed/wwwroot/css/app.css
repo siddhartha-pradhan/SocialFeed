@@ -20,7 +20,7 @@ a,
 
 .btn-gradient {
   color: #fff !important;
-  background: linear-gradient(360deg, #029b3c 0%, #11b750 53.74%, #06bd4b 100%);
+  background-color: #eb7924 !important;
   border-radius: 8px !important;
   padding: 16px 22px !important;
 }
@@ -129,7 +129,7 @@ code {
   font-size: clamp(56px, calc(3.5rem + ((1vw - 7.68px) * -2.2569)), 30px);
   min-height: 0vw;
   font-weight: 700;
-  color: #029b3c;
+  color: #eb7924;
 }
 .custom-form .form-floating {
   position: relative;
