@@ -4,11 +4,17 @@
 
 .top-row {
   height: 3.5rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  padding: 0;
 }
 
-.navbar-brand {
-  font-size: 1.1rem;
+.navbar-brand,
+.navbar-brand:hover {
+  font-size: 2rem;
+  color: #eb7924;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-icon {
@@ -30,21 +36,22 @@
 }
 
 .nav-item ::deep a {
-  color: #d7d7d7;
+  color: #909187;
   border-radius: 4px;
   height: 3rem;
   display: flex;
   align-items: center;
   line-height: 3rem;
+  padding: 16px 14px;
 }
 
 .nav-item ::deep a.active {
-  background-color: rgba(255, 255, 255, 0.37);
+  background-color: #eb7924;
   color: white;
 }
 
 .nav-item ::deep a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #eb7924;
   color: white;
 }
 

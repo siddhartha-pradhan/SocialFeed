@@ -1,0 +1,9 @@
+.blog {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 16px 2px #d0d0d029;
+}
+.img-wrapper img{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}

@@ -5,3 +5,8 @@
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+.nav-tabs.nav-bordered li a.active {
+  border-bottom: 2px solid var(--ct-border-color) !important;
+  background: #fff0e5;
+  color: #637381;
+}
