@@ -1,7 +1,7 @@
 .card-images {
   row-gap: 24px;
 }
-.card:nth-child(3) img {
-  aspect-ratio: 2/1;
+.card-images img {
+  aspect-ratio: 16/9;
   object-fit: cover;
 }
